@@ -9,6 +9,15 @@
     width: 100%
 }
 
+.navbar a {
+    text-decoration: none;
+    color: #ff6060;
+}
+/*
+.navbar a:hover {
+    text-decoration: underline;
+}*/
+
 .navbar__logo {
     margin-right: auto;
     width: 210px;
