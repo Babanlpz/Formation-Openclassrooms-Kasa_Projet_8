@@ -3,7 +3,8 @@
     color: white;
     text-align: center;
     height: 208px;
-    min-height: 200px;
+    min-height: 100px;
+    display: grid;
 }
 
 .footer__container {
@@ -12,4 +13,9 @@
 
 .footer__text {
     padding-top: 29px;
+}
+
+.footer__logo {
+    width: 122px;
+    height: 39px;
 }
