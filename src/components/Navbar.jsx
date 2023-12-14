@@ -1,11 +1,12 @@
 import React from 'react'
 import { NavLink } from "react-router-dom"
-import "./Navbar.css"
+import "./Navbar.scss"
 
 function Navbar() {
 
   let activeStyle = {
     textDecoration: " underline",
+    color: "$color-primary"
   }
 
   let activeClasseName = "underline"

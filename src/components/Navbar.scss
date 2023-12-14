@@ -1,8 +1,10 @@
+@use "../scss/variables.scss" as *;
+
 .navbar {
     display: flex;
     gap: 2rem;
     align-items: center;
-    color: #FF6060;
+    color: $color-primary;
     font-weight: 500;
     padding-bottom: 50px;
     padding-top: 45px;
@@ -11,7 +13,7 @@
 
 .navbar a {
     text-decoration: none;
-    color: #ff6060;
+    color: $color-primary;
 }
 /*
 .navbar a:hover {
