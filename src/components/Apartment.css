@@ -1,0 +1,25 @@
+.apartment {
+    background-image:linear-gradient(180deg, #ff6060, black);
+    border-radius: 10px;
+    flex-basis: 30%;
+    display: grid;
+    align-items: end;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+@media screen and (width <= 768px) {
+    .apartment {
+        flex-basis: 100%;
+    }
+}
+
+.apartment__subtitle {
+    width: 50%;
+    margin-inline-start: 20px;
+    font-family: "Montserrat" , sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    color: white;
+}

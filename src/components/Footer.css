@@ -1,0 +1,15 @@
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 208px;
+    min-height: 200px;
+}
+
+.footer__container {
+    padding-top: 66px;
+}
+
+.footer__text {
+    padding-top: 29px;
+}
