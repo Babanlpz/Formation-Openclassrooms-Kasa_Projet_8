@@ -3,11 +3,15 @@ import { createBrowserRouter, Outlet } from "react-router-dom"
 import Homepage from '../pages/Homepage.jsx'
 import Footer from "../components/Footer.jsx"
 import Navbar from "../components/Navbar.jsx"
+import Main from "../components/Main.jsx";
+
 
 const HeaderFooterLayout = () => {
   return <>
     <Navbar />
-    <Outlet />
+    <Main>
+      <Outlet />
+    </Main>
     <Footer />
   </>
 }
