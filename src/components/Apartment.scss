@@ -1,3 +1,5 @@
+@use "../scss/variables.scss" as *;
+
 .apartment {
     background-image: linear-gradient(180deg, rgba(255, 96, 96, 1) 0%, rgba(0, 0, 0, 0.501) 100%);
     border-radius: 10px;
@@ -6,6 +8,16 @@
     align-items: end;
     min-width: 200px;
     min-height: 200px;
+
+    & &__subtitle {
+        width: 50%;
+        margin-inline-start: 20px;
+        font-family: "Montserrat" , sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        padding-bottom: 20px;
+        color: $color-tertiary;
+    }
 }
 
 
@@ -15,12 +27,3 @@
     }
 }
 
-.apartment__subtitle {
-    width: 50%;
-    margin-inline-start: 20px;
-    font-family: "Montserrat" , sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    padding-bottom: 20px;
-    color: white;
-}

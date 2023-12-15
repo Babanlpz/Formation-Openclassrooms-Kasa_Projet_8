@@ -1,4 +1,4 @@
-@use "../scss/variables.scss" as *;
+@use "../scss/variables.scss" as * ;
 
 .navbar {
     display: flex;
@@ -8,20 +8,21 @@
     font-weight: 500;
     padding-bottom: 50px;
     padding-top: 45px;
-    width: 100%
-}
+    width: 100%;
 
-.navbar a {
-    text-decoration: none;
-    color: $color-primary;
-}
-/*
-.navbar a:hover {
-    text-decoration: underline;
-}*/
+    &__logo {
+        margin-right: auto;
+        width: 210px;
+        height: 68px;
+    }
 
-.navbar__logo {
-    margin-right: auto;
-    width: 210px;
-    height: 68px;
-}
+     & a {
+        text-decoration: none;
+        color: $color-primary;
+    }
+         a:hover {
+        text-decoration: underline;
+        }
+    }
+   
+

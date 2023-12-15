@@ -1,0 +1,28 @@
+@use "../scss/variables.scss" as *;
+
+.footer {
+    background-color: $footer-background;
+    color: $color-tertiary;
+    text-align: center;
+    height: 208px;
+    min-height: 100px;
+    display: grid;
+
+    &__container {
+        padding-top: 66px;
+    }
+
+    &__text {
+        padding-top: 29px;
+    }
+
+    &__logo {
+        width: 122px;
+        height: 39px;
+    }
+    
+}
+
+
+
+

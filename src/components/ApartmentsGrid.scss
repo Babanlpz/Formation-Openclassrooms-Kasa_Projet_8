@@ -1,5 +1,7 @@
+@use "../scss/variables.scss" as *;
+
 .grid {
-    background-color: #F6F6F6;
+    background-color: $background-dark;
     height: 829px;
     min-height: 50vh;
     border-radius: 25px;
@@ -7,6 +9,7 @@
     flex-wrap: wrap;
     gap: 40px;
     padding: 56px 50px 43px 50px;
+    margin-bottom: 3rem;
 }
 
 @media screen and (width <= 1100px) {
@@ -20,7 +23,7 @@
     .grid {
         flex-direction: row;
         justify-content: center;
-        background-color: white;
+        background-color: $grid-background-light;
         padding: 0;
     }
 }
