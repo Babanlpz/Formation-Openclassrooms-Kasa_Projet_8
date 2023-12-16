@@ -1,19 +1,22 @@
 import React from 'react'
 import { createBrowserRouter, Outlet } from "react-router-dom"
 import Homepage from '../pages/Homepage.jsx'
-import Footer from "../components/Footer.jsx"
+import Footer from "../layout/Footer.jsx"
+import Main from '../layout/Main'
 import Navbar from "../components/Navbar.jsx"
-import Main from "../components/Main.jsx";
+import ApartmentPage from '../pages/ApartmentPage.jsx'
 
 
 const HeaderFooterLayout = () => {
-  return <>
+  return (
+  <>
     <Navbar />
     <Main>
       <Outlet />
     </Main>
     <Footer />
   </>
+  )
 }
 
 export const router = createBrowserRouter([
@@ -27,7 +30,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/flat",
-        element: <h1>Nos appartements</h1>
+        element: <ApartmentPage />
       },
       {
         path: "/about",

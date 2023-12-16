@@ -3,10 +3,11 @@
 .footer {
     background-color: $footer-background;
     color: $color-tertiary;
+    padding: 20px;
     text-align: center;
-    height: 208px;
     min-height: 100px;
     display: grid;
+    place-items: center;
 
     &__container {
         padding-top: 66px;
