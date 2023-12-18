@@ -1,0 +1,22 @@
+
+/components
+    => un composant "purement graphique" que l'on peux inclure quelque parts
+        => button 
+        => banner 
+        => Card 
+
+/containers
+    => un composant "logique" que l'on peux inclure quelque parts
+        => CardList => faire le fetch pour chercher les données, les traiter puis appeler les components pour l'affichage par exemple Card
+
+/layouts
+    => une structure à trou qui permet d'éviter de réécrire cette structure sur chaque page
+        => Layoutpage
+
+/pages
+    => composant qui permet de représenter une pages
+        => homepage
+        => about
+        => appartment
+        => 404
+

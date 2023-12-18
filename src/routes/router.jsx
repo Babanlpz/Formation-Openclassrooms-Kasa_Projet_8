@@ -28,7 +28,7 @@ export const router = createBrowserRouter([
         path: "/",
         element: <Homepage />
       },
-      {
+      {        
         path: "/flat",
         element: <ApartmentPage />
       },

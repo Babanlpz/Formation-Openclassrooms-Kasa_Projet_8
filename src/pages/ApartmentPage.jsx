@@ -1,8 +1,16 @@
-import React from 'react'
+import React from "react"
+import ApartmentDescription from '../components/ApartmentDescription'
 import "./ApartmentPage.scss"
 
 
+
+
 function ApartmentPage() {
+
+    /*
+        useParams() => permettra de retourner un objet qui contient les variables de l'URL        
+    */
+   
   return (
     <div className='apartment-page'>
         <div> 
@@ -27,21 +35,16 @@ function ApartmentPage() {
                     <div className='apartment__owner__badge'></div>
                 </div>
                 <div className='apartment__owner__stars'>
-                <span>⭐️</span>
-                <span>⭐️</span>
-                <span>⭐️</span>
-                <span>⭐️</span>
-                <span>⭐️</span>
+                <span className='on'><i class="fa-solid fa-star"></i></span>
+                <span className='on'><i class="fa-solid fa-star"></i></span>
+                <span className='on'><i class="fa-solid fa-star"></i></span>
+                <span className='off'><i class="fa-solid fa-star"></i></span>
+                <span className='off'><i class="fa-solid fa-star"></i></span>
                 </div>
             </div>
         </div>
-        <div className='apartment__description'>
-            <p>Description</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quia beatae facere sequi, saepe laboriosam illum nesciunt obcaecati rerum illo adipisci dolore distinctio ratione ea cum animi, quos commodi provident.</p>
-        </div>
-        <div className='apartment__description'>
-            <p>Description</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quia beatae facere sequi, saepe laboriosam illum nesciunt obcaecati rerum illo adipisci dolore distinctio ratione ea cum animi, quos commodi provident.</p>
+        <div>
+            <ApartmentDescription />
         </div>
     </div>
   )

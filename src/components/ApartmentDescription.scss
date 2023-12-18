@@ -1,0 +1,34 @@
+@use "../scss/variables.scss" as *;
+
+.apartment__description {
+    width: 582px;
+    margin-top: 24px;
+
+    i {
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .description__header {
+        display: flex;
+        justify-content: space-between;
+        background-color: $color-primary;
+        color: $color-tertiary;
+        padding: 10px 20px 10px 10px;
+        border-radius: 10px;
+        font-family: 'Montserrat' , sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+        }
+    .description__content {
+        background-color: #F6F6F6;
+        color: $color-primary;
+        padding: 70px 20px 20px 20px;
+        border-radius: 10px;
+        position: relative;
+        top: -3rem;
+        z-index: -1;
+    }
+ }
