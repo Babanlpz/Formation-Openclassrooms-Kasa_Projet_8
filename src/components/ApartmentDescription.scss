@@ -1,9 +1,7 @@
 @use "../scss/variables.scss" as *;
 
 .apartment__description {
-    width: 582px;
     margin-top: 24px;
-
     i {
         font-size: 24px;
         cursor: pointer;
@@ -21,6 +19,9 @@
         line-height: 26px;
         letter-spacing: 0em;
         text-align: left;
+            @media screen and (width <= 768px) {
+                margin-top: 13px;
+            }
         }
     .description__content {
         background-color: #F6F6F6;
@@ -31,4 +32,14 @@
         top: -3rem;
         z-index: -1;
     }
+    
  }
+
+ .apartment__description__area {
+    display: flex;
+    gap: 76px;
+    @media screen and (width <= 768px){
+        flex-direction: column;
+        gap: 38px;
+    }
+}
