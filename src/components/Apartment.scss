@@ -1,13 +1,21 @@
 @use "../scss/variables.scss" as *;
 
 .apartment {
-    background-image: linear-gradient(180deg, rgba(255, 96, 96, 1) 0%, rgba(0, 0, 0, 0.501) 100%);
+    /*background-image: linear-gradient(180deg, rgba(255, 96, 96, 1) 0%, rgba(0, 0, 0, 0.501) 100%);*/
     border-radius: 10px;
     flex-basis: 30%;
     display: grid;
     align-items: end;
     min-width: 200px;
     min-height: 200px;
+    background-size: cover;
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
 
     & &__subtitle {
         width: 50%;
@@ -17,6 +25,7 @@
         font-weight: 500;
         padding-bottom: 20px;
         color: $color-tertiary;
+        position: absolute;
     }
 }
 
