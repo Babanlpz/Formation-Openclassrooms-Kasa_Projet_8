@@ -1,0 +1,37 @@
+@use "../scss/variables.scss" as *;
+
+.error__page {
+    color: $color-primary;
+    text-align: center;
+    h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 288px;
+        font-weight: 700;
+        line-height: 411px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 139px;
+        margin-top: 139px;
+    }
+    h2 {
+        font-family: "Montserrat" , sans-serif;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 51px;
+        letter-spacing: 0em;
+        padding-bottom: 139px;
+    }
+
+    a {
+        font-family: "Montserrat", sans-serif;
+        color: $color-primary;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

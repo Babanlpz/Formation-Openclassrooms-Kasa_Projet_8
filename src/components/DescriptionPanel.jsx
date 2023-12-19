@@ -1,7 +1,7 @@
 import React from "react";
-import "./ApartmentDescription.scss"; 
+import "./DescriptionPanel.scss"; 
 
-function ApartmentDescription() {
+function DescriptionPanel() {
     return (
 
             <div className='apartment__description'>
@@ -15,6 +15,6 @@ function ApartmentDescription() {
     );
 }
 
-export default ApartmentDescription
+export default DescriptionPanel
 
 

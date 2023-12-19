@@ -1,6 +1,6 @@
 import React from "react"
-import ApartmentDescription from '../components/ApartmentDescription'
-import ApartmentBanner from "../components/ApartmentBanner"
+import ApartmentDescription from '../components/DescriptionPanel'
+import ApartmentBanner from "../components/ImageBanner"
 import ApartmentHeader from "../components/ApartmentHeader"
 
 
