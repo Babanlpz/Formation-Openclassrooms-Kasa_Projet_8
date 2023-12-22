@@ -1,6 +1,6 @@
 import React from 'react'
 import { createBrowserRouter, Outlet } from "react-router-dom"
-import Homepage from '../pages/Homepage.jsx'
+import Home from '../pages/home/Home.jsx'
 import Footer from "../layout/Footer.jsx"
 import Main from '../layout/Main'
 import Navbar from "../components/Navbar.jsx"
@@ -28,10 +28,10 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Homepage />
+        element: <Home />
       },
       {        
-        path: "/flat",
+        path: "/flat/:id",
         element: <ApartmentPage />
       },
       {

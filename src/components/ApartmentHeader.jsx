@@ -17,7 +17,7 @@ function ApartmentHeader(props) {
                     <span>Canal</span>
                     <span>Paris 10</span>*/}
                     {selectedFlat.tags.map((tag) => (
-                         <span>{tag}</span>
+                         <span className="apartment__tag" key= {tag}>{tag}</span>
                         ))}
                 </div>
             </div>
@@ -32,11 +32,9 @@ function ApartmentHeader(props) {
                     </div>
                 </div>
                 <div className='apartment__owner__stars'>
-                <span className='on'><i class="fa-solid fa-star"></i></span>
-                <span className='on'><i class="fa-solid fa-star"></i></span>
-                <span className='on'><i class="fa-solid fa-star"></i></span>
-                <span className='off'><i class="fa-solid fa-star"></i></span>
-                <span className='off'><i class="fa-solid fa-star"></i></span>
+                    {[1, 2, 3, 4, 5].map((num) => (
+                        <span key={num} className={props.selectedFlat.rating >= num ? "on" : ""}><i class="fa-solid fa-star" /></span>
+                    ))}
                 </div>
             </div>
         </div>

@@ -2,12 +2,16 @@
 
 .apartment__description {
     margin-top: 24px;
+    flex-basis: 50%;
+    overflow: hidden;
     i {
         font-size: 24px;
         cursor: pointer;
     }
     .description__header {
         display: flex;
+        border: none;
+        width: 100%;
         justify-content: space-between;
         background-color: $color-primary;
         color: $color-tertiary;
@@ -31,10 +35,17 @@
         position: relative;
         top: -3rem;
         z-index: -1;
+        animation: slide-in 0.5s ease-in-out;
     }
-    
  }
 
+ @keyframes slide-in {
+    from {
+        transform: translateY(-100%);
+    }
+ }
+
+ 
  .apartment__description__area {
     display: flex;
     gap: 76px;

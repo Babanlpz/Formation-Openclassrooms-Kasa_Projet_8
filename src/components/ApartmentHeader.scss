@@ -53,15 +53,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 4px;
+            gap: 10px;
+            padding-top: 21px;
+            color: #E3E3E3;
             * {
                 font-size: 1.2rem;
             }
             .on {
                 color: $color-primary;
-            }
-            .off {
-                color: #E3E3E3;
             }
         }
         
@@ -74,8 +73,12 @@
     }
 
     & .apartment__tags {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
         gap: 10px;
+        .apartment__tag {
+            font-size: 14px;
+        }
         span {
             display: flex;
             justify-content: center;
@@ -83,7 +86,6 @@
             background-color: $color-primary;
             color: $color-tertiary;
             border-radius: 10px;
-            width: 115px;
             height: 25px;
         }
     }

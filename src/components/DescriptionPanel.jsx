@@ -1,15 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
 import "./DescriptionPanel.scss"; 
 
-function DescriptionPanel() {
+function DescriptionPanel(props) {
+
+    const [isOpened, setIsOpened] = useState(false)
+    const showContent = () => {
+        setIsOpened(!isOpened)
+    }
+
     return (
 
             <div className='apartment__description'>
-                <p className='description__header'>
-                <span>Description</span>
-                <i class="fas fa-chevron-down"></i>
-                </p>
-                <p className='description__content'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quia beatae facere sequi, saepe laboriosam illum nesciunt obcaecati rerum illo adipisci dolore distinctio ratione ea cum animi, quos commodi provident.</p>
+                <button className='description__header'>
+                    <span>{props.title}</span>
+                    {!isOpened && <i class="fas fa-chevron-up" onClick={showContent}></i>}
+                    {isOpened && <i class="fas fa-chevron-down" onClick={showContent}></i>}
+                </button>
+                {isOpened && <p className='description__content'>{props.content}</p>}
             </div>
 
     );
