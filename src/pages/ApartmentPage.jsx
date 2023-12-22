@@ -26,12 +26,12 @@ if (selectedFlat == null) return <div>... Loading</div>
 return (
     <div className='apartment-page'>
         <div> 
-            <ApartmentBanner imageUrl={selectedFlat.cover} />
+            <ApartmentBanner pictures={selectedFlat.pictures} />
         </div>
            <ApartmentHeader selectedFlat={selectedFlat} />
         <div className="apartment__description__area">
             <ApartmentDescription title="Description" content={selectedFlat.description} />
-            <ApartmentDescription title="Equipements" content={selectedFlat.equipments.map(eq => <li>{eq}</li>)} />
+            <ApartmentDescription title="Equipements" content={selectedFlat.equipments.map((eq, i) => <li key={i}>{eq}</li>)} />
         </div>
     </div>
   )
