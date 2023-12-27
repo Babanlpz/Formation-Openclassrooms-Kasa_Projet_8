@@ -9,17 +9,25 @@ function ApartmentPage() {
     const {id} = useParams();    
     const [selectedFlat, setSelectedFLat] = useState(null);
 
-    useEffect(fetchApartmentData, []);
-
-    function fetchApartmentData() {
+    useEffect(() => {
+        console.log("component was mounted, we fetch apartment")
+        const abortController = new AbortController()
         fetch("/db.json")
             .then((res) => res.json())
             .then((flats) => {        
                 const flat = flats.find((flat) => flat.id === id);
                 setSelectedFLat(flat);
             })
-            .catch(console.error); 
-    }
+            .catch(console.error);
+            return() => {
+                console.log("component was unmounted, we cancel the fetch")
+                abortController.abort()
+             } 
+
+        
+    }, []);
+
+
 
 if (selectedFlat == null) return <div>... Loading</div>
 

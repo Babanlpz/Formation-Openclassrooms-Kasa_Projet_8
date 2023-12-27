@@ -23,6 +23,7 @@
     }
     img {
         position: absolute;
+        object-fit: cover;
         inset: 0;
         margin-top: 27px;
         width: 100%;
@@ -34,5 +35,19 @@
         &.show {
             opacity: 1;
         }
+    }
+    .slide-counter {
+        color: $color-tertiary;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        position: absolute;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;
+
     }
 }
