@@ -1,6 +1,8 @@
 @use "../scss/variables.scss" as *;
 
 .about__container {
-    padding-top: 38px;
-    padding-inline: 5rem;
+    margin: auto;
+    padding-top: 1px;
+    width: 100%;
+    max-width: 1023px;
 }

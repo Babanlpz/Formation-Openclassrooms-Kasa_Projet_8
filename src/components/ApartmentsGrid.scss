@@ -2,13 +2,16 @@
 
 .grid {
     background-color: $background-dark;
+    margin: auto;
+    max-width: 1240px;
     min-height: 50vh;
     border-radius: 25px;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem;
+    gap: 3rem;
+    padding: 50px 56px;
     justify-content: center;
+    margin-bottom: 20px;
 
     & > * {
         width: 100%;
@@ -19,9 +22,12 @@
 
 @media screen and (width <= 768px) {
     .grid {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         background-color: $grid-background-light;
         padding: 0;
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
     }
 }

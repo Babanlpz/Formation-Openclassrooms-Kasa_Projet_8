@@ -36,6 +36,7 @@
         top: -3rem;
         z-index: -1;
         animation: slide-in 0.5s ease-in-out;
+        height: 120px;
         &.hidden {
             animation: slide-out 0.5s ease-in-out;
         }

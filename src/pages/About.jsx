@@ -4,10 +4,10 @@ import DescriptionPanel from '../components/DescriptionPanel'
 import "./About.scss"
 
 function About() {
-  return (
+  return (    
     <>
         <ApartmentBanner />
-        <div className='about__container'>
+        <div className={'about__container'}>
         <DescriptionPanel title="Fiabilité" content="C'est important" />
         <DescriptionPanel title="Respect" content="" />
         <DescriptionPanel title="Service" content="" />
