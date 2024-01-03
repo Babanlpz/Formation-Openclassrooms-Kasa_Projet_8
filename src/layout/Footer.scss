@@ -8,18 +8,42 @@
     min-height: 100px;
     display: grid;
     place-items: center;
+    height: 209px;
 
     &__container {
         padding-top: 66px;
     }
 
     &__text {
+        display: flex;
+        gap: 5px;
         padding-top: 29px;
     }
 
     &__logo {
         width: 122px;
         height: 39px;
+    }
+
+    @media screen and (width <= 768px) {
+        height: 209px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        &__container {
+            padding-top: 0;
+        }
+        &__text {
+            flex-direction: column;
+            padding-top: 0;
+            &p {
+                margin-bottom: -16px;
+            }
+        }
+        &__logo {
+            width: 122px;
+            height: 39px;
+        }
     }
     
 }

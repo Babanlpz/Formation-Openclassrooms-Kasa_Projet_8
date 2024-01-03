@@ -31,7 +31,7 @@ const arePicturesAvailable = () => {
 
 const getCarouselOrDefaultImage = () => {
   if (!arePicturesAvailable()) {
-    return <img src="image3.png" alt="" className='show' />;
+    return <img src="image3.png" alt="" className='show image__apartment' />;
   }
     return pictures.map((pic, i) => (
     <img key={pic} src={pic} alt="" className={getClassName(i)}></img>
@@ -39,7 +39,7 @@ const getCarouselOrDefaultImage = () => {
 };
 
   return (
-    <div className='image__banner'> 
+    <div className='image__banner banner__apartment'> 
    
       <div className='image__container'>
           {getCarouselOrDefaultImage()}

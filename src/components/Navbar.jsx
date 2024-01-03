@@ -14,7 +14,9 @@ function Navbar() {
   return (
     <nav className='navbar'>
     <div className='navbar__logo'>
+      <NavLink to="/">
         <img src='logo.png' alt='Logo' />
+      </NavLink>
     </div>
     <NavLink to="/" style={({ isActive }) => 
       isActive ? activeStyle : undefined

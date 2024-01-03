@@ -13,12 +13,30 @@
     justify-content: center;
     margin-bottom: 20px;
 
-    & > * {
+    /*& > * {
         width: 100%;
         max-width: 20rem;
     }
+    */
 }
 
+@media screen and (width <= 1040px) {
+    .grid {
+        background-color: $grid-background-light;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+    }
+}
+@media screen and (width <= 999px) {
+    .grid {
+        display: grid;
+    }
+    
+}
 
 @media screen and (width <= 768px) {
     .grid {

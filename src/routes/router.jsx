@@ -4,9 +4,9 @@ import Home from '../pages/home/Home.jsx'
 import Footer from "../layout/Footer.jsx"
 import Main from '../layout/Main'
 import Navbar from "../components/Navbar.jsx"
-import ApartmentPage from '../pages/ApartmentPage.jsx'
-import About from '../pages/About.jsx'
-import ErrorPageNotFound from '../pages/ErrorPageNotFound.jsx'
+import ApartmentPage from '../pages/apartment/ApartmentPage.jsx'
+import About from '../pages/about/About.jsx'
+import ErrorPageNotFound from '../pages/error/ErrorPageNotFound.jsx'
 
 
 const HeaderFooterLayout = () => {

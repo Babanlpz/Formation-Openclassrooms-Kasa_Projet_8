@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
-import ApartmentDescription from '../components/DescriptionPanel'
-import ApartmentBanner from "../components/ImageBanner"
-import ApartmentHeader from "../components/ApartmentHeader"
+import ApartmentDescription from '../../components/DescriptionPanel'
+import ApartmentBanner from "../../components/ImageBanner"
+import ApartmentHeader from "../../components/ApartmentHeader"
 import { useParams } from "react-router-dom/dist"
 
 
