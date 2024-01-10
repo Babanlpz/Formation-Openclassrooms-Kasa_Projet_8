@@ -32,7 +32,7 @@ export const router = createBrowserRouter([
       },
       {        
         path: "/flat/:id",
-        element: <ApartmentPage />
+        element: <ApartmentPage /> 
       },
       {
         path: "/about",

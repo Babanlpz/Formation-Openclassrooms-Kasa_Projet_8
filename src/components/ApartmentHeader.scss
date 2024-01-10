@@ -23,6 +23,7 @@
 
     .apartment__header {
         display: flex;
+        padding-top: 10px;
         @media screen and (width <= 768px) {
             display: block;
             flex-direction: column;
@@ -38,6 +39,7 @@
         .apartment__owner__details {
             display: flex;
             gap: 10px;
+            padding-top: 5px;
         }
         .apartment__owner__badge {
             padding-top: 10px;
@@ -74,7 +76,10 @@
 
     & .apartment__tags {
         display: grid;
+        grid-auto-flow: column;
+        /*
         grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+        */
         gap: 10px;
         .apartment__tag {
             font-size: 14px;

@@ -14,7 +14,7 @@
         place-items: center;
         color: $color-tertiary;
         margin-bottom: 43px;
-        width: 1240px;
+        width: 1360px;
         max-width: 100%;
 
         &::before {
@@ -24,6 +24,12 @@
             inset: 0;
             opacity: 0.5;
         }
+
+        @media screen and (width <= 768px) {
+           h1 { 
+            padding-left: 15px;
+            } 
+        } 
+        }
         
-}
 

@@ -3,6 +3,7 @@
 .error__page {
     color: $color-primary;
     text-align: center;
+    padding-bottom: 139px;
     h1 {
         font-family: "Montserrat", sans-serif;
         font-size: 288px;
@@ -11,7 +12,7 @@
         letter-spacing: 0em;
         text-align: center;
         margin-bottom: 139px;
-        margin-top: 139px;
+        margin-top: 60px;
     }
     h2 {
         font-family: "Montserrat" , sans-serif;
@@ -30,8 +31,27 @@
         line-height: 26px;
         letter-spacing: 0em;
         text-decoration: none;
+        padding-bottom: 139px;
         &:hover {
             text-decoration: underline;
+        }
+    }
+
+    @media screen and (width <= 768px) {
+        h1 {
+            font-size: 96px;
+            font-weight: 700;
+            line-height: 137px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: center;
         }
     }
 }
