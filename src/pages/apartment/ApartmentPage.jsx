@@ -1,45 +1,25 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import ApartmentDescription from '../../components/DescriptionPanel'
 import ApartmentBanner from "../../components/ImageBanner"
 import ApartmentHeader from "../../components/ApartmentHeader"
-import { useParams } from "react-router-dom/dist"
+import { useApartment } from "../../../hook/useApartment"
+import "./ApartmentPage.scss"
 
 
 function ApartmentPage() {
-    const {id} = useParams();    
-    const [selectedFlat, setSelectedFLat] = useState(null);
+    const flat = useApartment();
 
-    useEffect(() => {
-        console.log("component was mounted, we fetch apartment")
-        const abortController = new AbortController()
-        fetch("/db.json")
-            .then((res) => res.json())
-            .then((flats) => {        
-                const flat = flats.find((flat) => flat.id === id);
-                setSelectedFLat(flat);
-            })
-            .catch(console.error);
-            return() => {
-                console.log("component was unmounted, we cancel the fetch")
-                abortController.abort()
-             } 
-
-        
-    }, []);
-
-
-
-if (selectedFlat == null) return <div>... Loading</div>
+if (flat == null) return <div>... Loading</div>
 
 return (
     <div className='apartment-page'>
         <div> 
-            <ApartmentBanner pictures={selectedFlat.pictures} />
+            <ApartmentBanner pictures={flat.pictures} />
         </div>
-           <ApartmentHeader selectedFlat={selectedFlat} />
+           <ApartmentHeader flat={flat} />
         <div className="apartment__description__area">
-            <ApartmentDescription title="Description" content={selectedFlat.description} />
-            <ApartmentDescription title="Equipements" content={selectedFlat.equipments.map((eq, i) => <li key={i}>{eq}</li>)} />
+            <ApartmentDescription title="Description" content={flat.description} />
+            <ApartmentDescription title="Equipements" content={flat.equipments.map((eq, i) => <li key={i}>{eq}</li>)} />
         </div>
     </div>
   )
