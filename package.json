@@ -3,10 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "« https://votre_username_githubgithub.io/votre_nom_de_depot/ »",
   "scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
@@ -31,5 +28,4 @@
     "sass": "^1.69.5",
     "vite": "^5.0.11"
   }
-  
 }
