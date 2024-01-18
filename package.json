@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Babanlpz.github.io/Lopez_Esteban_Kasa_Projet_8",
+  "homepage": "https://Babanlpz.github.io/Lopez_Esteban_Kasa_Projet_8/",
   "scripts": {
     "start": "vite",
     "dev": "vite",
