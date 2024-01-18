@@ -8,6 +8,7 @@ const pictures = props.pictures;
 const [currentPicture , setCurrentPicture] = useState(0);
 
 /**
+ * La fonction getClassName retourne "show" si l'argument i est égal à la variable currentPicture, sinon elle retourne une chaîne vide.
  * @param {*} i 
  * @returns 
  */
@@ -17,6 +18,7 @@ const getClassName = (i) => {
 };
 
 /**
+ * La fonction moveToNext incrémente la variable d'état currentPicture pour passer à l'image suivante dans un tableau cyclique.
  *  @returns {void}
  */
 const moveToNext = () => {
@@ -24,7 +26,7 @@ const moveToNext = () => {
 };
 
 /**
- * 
+ * La fonction moveToPrevious ajuste la variable d'état currentPicture pour afficher l'image précédente dans un tableau cyclique.
  * @returns {void}
  */
 const moveToPrevious = () => {
@@ -38,7 +40,7 @@ const moveToPrevious = () => {
 
 
 /**
- * 
+ * La fonction arePicturesAvailable retourne vrai si la variable pictures existe et si sa longueur est supérieure à zéro, indiquant ainsi la disponibilité d'images.
  * @returns {boolean}
  */
 const arePicturesAvailable = () => {
@@ -46,15 +48,16 @@ const arePicturesAvailable = () => {
 };
 
 /**
- * 
+ * La fonction getCarouselOrDefaultImage retourne un élément d'image avec des propriétés spécifiées si aucune image n'est disponible,
+ *  sinon elle génère un ensemble d'éléments d'image basé sur le tableau pictures avec des classes déterminées par la fonction getClassName.
  * @returns {JSX.Element}
  */
 const getCarouselOrDefaultImage = () => {
   if (!arePicturesAvailable()) {
-    return <img src="image3.png" alt="" className='show image__apartment'style={{ height: '223px', filter: 'brightness(70%)'}}/>;
+    return <img src="image3.png" alt="banniére" className='show image__apartment'style={{ height: '223px', filter: 'brightness(70%)'}}/>;
   }
     return pictures.map((pic, i) => (
-    <img key={pic} src={pic} alt="" className={getClassName(i)}></img>
+    <img key={pic} src={pic} alt="banniére" className={getClassName(i)}></img>
   ));
 };
 

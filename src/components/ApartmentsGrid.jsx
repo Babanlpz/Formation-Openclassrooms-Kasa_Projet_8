@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "./ApartmentsGrid.scss"
 import Apartment from './Apartment.jsx'
-import { useApartments } from '../../hook/useApartments.jsx'
+import { useApartments } from '../hook/useApartments.jsx'
 
 
 function ApartmentsGrid() {
