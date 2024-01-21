@@ -62,8 +62,7 @@ const arePicturesAvailable = () => {
  */
 const getCarouselOrDefaultImage = () => {
   if (!arePicturesAvailable()) {
-    return <img src="image3.png" alt="banniére" className='show image__apartment'style={{ height: '223px', filter: 'brightness(70%)'}}/>;
-  }
+    return <img src="./image3.png" alt="banniére" className='show image__apartment'style={{ height: '223px', filter: 'brightness(70%)'}}/>;}
     return pictures.map((pic, i) => (
     <img key={pic} src={pic} alt="banniére" className={getClassName(i)}></img>
   ));
