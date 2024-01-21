@@ -22,7 +22,7 @@ function DescriptionPanel(props) {
 
   const chevronStyle = {
     transform: `rotate(${rotateAngle}deg)`,
-    transition: 'transform 0.3s ease-in-out', // Ajout de l'animation de rotation
+    transition: 'transform 0.3s ease-in-out',
   };
 
   return (
