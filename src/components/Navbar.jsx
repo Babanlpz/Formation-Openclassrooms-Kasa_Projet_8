@@ -15,7 +15,7 @@ function Navbar() {
     <nav className='navbar'>
     <NavLink className='navbar__logo' >
       <NavLink to="/">
-        <img src='logo.png' alt='Logo' />
+        <img src='./logo.png' alt='Logo' />
       </NavLink>
     </NavLink>
     <NavLink to="/" style={({ isActive }) => 
