@@ -1,7 +1,7 @@
 @use "../scss/variables.scss" as *;
 
 .grid {
-    background-color: $background-dark;
+    background-color: #F6F6F6;
     margin: auto;
     max-width: 1240px;
     min-height: 50vh;
@@ -39,6 +39,18 @@
 }
 
 @media screen and (width <= 768px) {
+    .grid {
+        flex-direction: column;
+        justify-content: center;
+        background-color: $grid-background-light;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+    }
+}
+
+@media screen and (width <= 500px) {
     .grid {
         flex-direction: column;
         justify-content: center;

@@ -4,6 +4,8 @@
     display: flex;
     gap: 2rem;
     align-items: center;
+    justify-content: space-between;
+
     color: $color-primary;
     font-size: 24px;
     font-weight: 500;
@@ -16,18 +18,49 @@
     }
 
     &__logo {
-        margin-right: auto;
         width: 210px;
         height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        
+        img {
+            max-width: 210px;
+        }
+        @media screen and (width <= 375px) {
+            width: 145px;
+            height: 46px;
+            img {
+                max-height: 40px;
+            }
+        }
+    }
+    &__list {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content:flex-end;
+    
+        @media screen and (width <= 375px) {
+      
+ }
     }
 
      & a {
         text-decoration: none;
         color: $color-primary;
+
+        &:nth-child(2){
+            margin-left:10px;
+        }
+
+        @media screen and (width <= 375px) {
+        }
     }
          a:hover {
         text-decoration: underline;
         }
     }
-   
+
+
 

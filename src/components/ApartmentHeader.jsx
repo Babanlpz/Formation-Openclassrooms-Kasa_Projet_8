@@ -1,6 +1,15 @@
 import React from 'react'
 import "./ApartmentHeader.scss"
 
+
+/**
+ * La fonction ApartmentHeader prend un objet flat en tant que prop,
+ *  extrait le nom du propriétaire, puis rend l'en-tête d'un appartement avec le titre, 
+ * l'emplacement, les étiquettes, le nom du propriétaire avec une image de profil, 
+ * et une notation d'étoiles basée sur la note de l'appartement.
+ * @param {*} param0 
+ * @returns 
+ */
 function ApartmentHeader({ flat }) {
 
     const { name } = flat.host;

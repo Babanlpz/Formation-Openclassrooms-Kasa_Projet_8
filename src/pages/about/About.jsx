@@ -3,6 +3,13 @@ import ApartmentBanner from '../../components/ImageBanner'
 import DescriptionPanel from '../../components/DescriptionPanel'
 import "./About.scss"
 
+
+/**
+ * Cette fonction About rend une bannière d'appartement avec <ApartmentBanner> 
+ * suivie d'une section contenant plusieurs panneaux <DescriptionPanel> décrivant 
+ * les valeurs de Kasa, telles que la fiabilité, le respect, le service et la responsabilité.
+ * @returns 
+ */
 function About() {
   return (    
     <>

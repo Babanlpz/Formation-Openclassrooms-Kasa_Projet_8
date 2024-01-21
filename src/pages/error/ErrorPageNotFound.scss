@@ -54,4 +54,23 @@
             text-align: center;
         }
     }
+
+    @media screen and (width <= 500px) {
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 69px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+        
+    }
 }

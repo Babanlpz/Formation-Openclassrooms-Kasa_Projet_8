@@ -16,6 +16,10 @@
         margin-bottom: 43px;
         width: 1360px;
         max-width: 100%;
+        h1 {
+            font-size: 48px;
+            font-weight: 500;
+        }
 
         &::before {
             position: absolute;
@@ -25,11 +29,19 @@
             opacity: 0.5;
         }
 
+        @media screen and (width <= 1000px) {
+            h1 { 
+                font-size: 24px;
+                padding-left: 15px;
+                } 
+            } 
+        }
         @media screen and (width <= 768px) {
            h1 { 
+            font-size: 24px;
             padding-left: 15px;
             } 
         } 
-        }
+        
         
 

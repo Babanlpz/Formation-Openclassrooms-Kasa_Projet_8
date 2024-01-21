@@ -1,7 +1,15 @@
 import React, { useState } from 'react'
 import "./ImageBanner.scss"
 
-function ImageBanner (props) {
+
+/**
+ * Les props sont des données que l'on passe de parent à enfant lorsqu'on rend un composant.
+ *  Ces données permettent de configurer ou personnaliser le comportement du composant enfant.
+ * @param {*} props 
+ * @returns 
+ */
+
+function ImageBanner(props) {
 
 const pictures = props.pictures;
 
@@ -69,17 +77,17 @@ const getCarouselOrDefaultImage = () => {
       </div>
      
         {arePicturesAvailable() && (
-        <>
-        <button className="btn btn-previous" onClick={moveToPrevious}>
-        <i className="fas fa-chevron-left"></i>
-        </button>
-         <span className='slide-counter'>
-           {currentPicture + 1} / {pictures.length}
-         </span>
-        <button className="btn btn-next" onClick={moveToNext}>
-        <i className="fas fa-chevron-right"></i>
-        </button>
-        </>
+          <>
+            <button className="btn btn-previous" onClick={moveToPrevious}>
+               <i className="fas fa-chevron-left"></i>
+            </button>
+            <span className='slide-counter'>
+              {currentPicture + 1} / {pictures.length}
+            </span>
+            <button className="btn btn-next" onClick={moveToNext}>
+              <i className="fas fa-chevron-right"></i>
+            </button>
+          </>
         )}
     </div>
   );

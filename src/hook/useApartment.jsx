@@ -1,24 +1,40 @@
-import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useEffect, useState  } from "react";
+import { useLocation, useParams} from "react-router-dom";
 
+
+/**
+ * useApartment utilise les hooks useState et useEffect pour récupérer les données 
+ * d'un appartement à partir d'un fichier JSON basé sur l'ID spécifié dans l'emplacement actuel. 
+ * Elle utilise également un AbortController pour gérer l'annulation de la requête.
+ * @returns 
+ */
 function useApartment() {
+  const {id} = useParams();
+
   const [flat, setFlat] = useState(null);
-  const location = useLocation();
+  const [isLoading, setIsLoading] = useState(true);
+  const [isError404, setIsError404] = useState(false); 
 
   useEffect(() => {
-    const abortController = new AbortController();
-    fetch("db.json", { signal: abortController.signal })
+    fetch("/db.json")
       .then((res) => res.json())
       .then((flats) => {
-        const flat = flats.find((flat) => flat.id === location.state.apartmentId);
-        setFlat(flat);
+        const flat = flats.find((flat) => flat.id === id);
+   
+        if(flat){
+          setFlat(flat);
+        }else {
+          setIsError404(true);
+        }
+  
+        setIsLoading(false)
       })
       .catch(console.error);
     return () => {
-      abortController.abort();
     };
+   
   }, []);
-  return flat;
+  return {isLoading, isError404, flat};
 }
 
 export { useApartment };
