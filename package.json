@@ -3,17 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "« https://votre_username_githubgithub.io/votre_nom_de_depot/ »",
+  "homepage": "https://babanlpz.github.io/Lopez_Esteban_Kasa_Projet_8/",
   "scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "build": "^0.1.4",
     "node-sass": "^9.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -31,5 +32,4 @@
     "sass": "^1.69.5",
     "vite": "^5.0.11"
   }
-  
 }
