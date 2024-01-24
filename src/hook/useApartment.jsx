@@ -25,7 +25,6 @@ function useApartment() {
         }else {
           setIsError404(true);
         }
-  
         setIsLoading(false)
       })
       .catch(console.error);
