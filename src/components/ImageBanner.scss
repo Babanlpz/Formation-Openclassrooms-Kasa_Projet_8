@@ -1,0 +1,69 @@
+@use "../scss/variables.scss" as *;
+
+.image__banner {
+        position: relative;
+        height: 140px;
+        margin-bottom: 30px; 
+    .btn {
+        position: absolute;
+        top: 56px;
+        bottom: 0;
+        width: 46px;
+        background-color: transparent;
+        color: $color-tertiary;
+        font-size: 3rem;
+        border: none;
+        cursor: pointer;
+    }
+    .btn-next {
+        right: 23px;
+    }
+    .btn-previous {
+        left: 23px;
+    }
+    img {
+        position: absolute;
+        object-fit: cover;
+        inset: 0;
+        margin-top: 27px;
+        width: 100%;
+        height: 415px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 25px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        &.show {
+            opacity: 1;
+        }
+    }
+    .slide-counter {
+        color: $color-tertiary;
+        bottom: 10px;
+        right: 0;
+        left: 0;
+        position: absolute;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+}
+
+.banner__apartment {
+    height: 415px;
+    @media screen and (width <= 768px) {
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%;
+        border-radius: 10px;
+        .slide-counter { 
+            color: transparent;
+        }
+    }
+}
+
+.image__apartment {
+    height: 415px;
+}

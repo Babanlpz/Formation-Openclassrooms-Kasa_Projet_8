@@ -1,0 +1,68 @@
+@use "../scss/variables.scss" as *;
+
+.apartment__description {
+    margin-top: 24px;
+    flex-basis: 50%;
+    overflow: hidden;
+    position: relative;
+    i {
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    .description__header {
+        display: flex;
+        border: none;
+        width: 100%;
+        justify-content: space-between;
+        background-color: $color-primary;
+        color: $color-tertiary;
+        padding: 10px 20px 10px 10px;
+        border-radius: 10px;
+        font-family: 'Montserrat' , sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+        }
+
+    .description__content {
+        background-color: #F6F6F6;
+        color: $color-primary;
+        padding: 70px 20px 20px 20px;
+        border-radius: 10px;
+        position: relative;
+        top: -3rem;
+        z-index: -1;
+        animation: slide-in 0.5s ease-in-out;
+        height: 120px;
+        &.hidden {
+            animation: slide-out 0.5s ease-in-out;
+        }
+    }
+ }
+
+ @keyframes slide-in {
+    from {
+        transform: translateY(-100%);
+    }
+ }
+
+ @keyframes slide-out {
+    to {
+        transform: translateY(-100%);
+    }
+ }
+
+ 
+ .apartment__description__area {
+    display: flex;
+    gap: 76px;
+    @media screen and (width <= 768px){
+        flex-direction: column;
+        gap: 0px;
+        padding-bottom: 27px;
+    }
+
+}

@@ -1,0 +1,76 @@
+@use "../../scss/variables.scss" as *;
+
+.error__page {
+    color: $color-primary;
+    text-align: center;
+    padding-bottom: 139px;
+    h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 288px;
+        font-weight: 700;
+        line-height: 411px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 139px;
+        margin-top: 60px;
+    }
+    h2 {
+        font-family: "Montserrat" , sans-serif;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 51px;
+        letter-spacing: 0em;
+        padding-bottom: 139px;
+    }
+
+    a {
+        font-family: "Montserrat", sans-serif;
+        color: $color-primary;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-decoration: none;
+        padding-bottom: 139px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media screen and (width <= 768px) {
+        h1 {
+            font-size: 96px;
+            font-weight: 700;
+            line-height: 137px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+    }
+
+    @media screen and (width <= 500px) {
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 69px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+        
+    }
+}

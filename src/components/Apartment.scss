@@ -1,0 +1,54 @@
+@use "../scss/variables.scss" as *;
+
+.apartment {
+    /*background-image: linear-gradient(180deg, rgba(255, 96, 96, 1) 0%, rgba(0, 0, 0, 0.501) 100%);*/
+    border-radius: 10px;
+    flex-basis: 30%;
+    display: grid;
+    align-items: end;
+    min-width: 200px;
+    min-height: 200px;
+    background-size: cover;
+    position: relative;
+    img {
+        width: 340px;
+        max-width: 100%;
+        height: 340px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    & &__subtitle {
+        width: 50%;
+        margin-inline-start: 20px;
+        font-family: "Montserrat" , sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        padding-bottom: 20px;
+        color: $color-tertiary;
+        position: absolute;
+    }
+}
+
+
+@media screen and (width <= 1040px) {
+    .apartment {
+        img {
+        width: 100%;
+        height: 100%;
+    }
+}
+    
+    
+}
+
+@media screen and (width <= 768px) {
+    .apartment {
+        flex-basis: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
