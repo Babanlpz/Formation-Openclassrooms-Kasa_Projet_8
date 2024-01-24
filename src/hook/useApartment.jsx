@@ -10,7 +10,6 @@ import { useLocation, useParams} from "react-router-dom";
  */
 function useApartment() {
   const {id} = useParams();
-
   const [flat, setFlat] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isError404, setIsError404] = useState(false); 
